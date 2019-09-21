@@ -6,6 +6,10 @@ taskmanagerproject is a spring boot appciaiton deveoped using https://start.spri
 
 
 Pre-requistes  for using application 
+Git Repository 
+==========================
+https://github.com/mprvn/FSDFinal.git
+
 
 For spa Install 
     node 10.16.3 version used for development 	
@@ -57,7 +61,7 @@ We need to run mysql first as backend is dependent on the mysql server
 > docker build -t <docker-id>/taskmanager-IO
 
 After creating image you need to run docker run command 
->  docker run --detach --name taskp -p 9090:9090 <docker-id>/task-manager  --link docker-mysql:mysql
+>  docker run --name taskp -p 9090:9090 <docker-id>/task-manager  --link docker-mysql:mysql
 >  --link is deprecated in future and so we might need to access the complete IP of the service 
   you can get ther details by running 'docker inspect docker-mysql' (image name)
 > We can run frontend normaly on the local machine or via docker wiht 'ng serve'
