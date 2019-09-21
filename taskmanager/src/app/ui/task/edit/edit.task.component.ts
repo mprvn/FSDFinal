@@ -68,7 +68,6 @@ export class EditTaskComponent implements OnInit {
     let formattedDate;
 
     if (!taskName || taskName.trim().length < 1) {
-      console.log(taskName);
       this.errorMsg = `Task name is mandatory`;
       return false;
     }

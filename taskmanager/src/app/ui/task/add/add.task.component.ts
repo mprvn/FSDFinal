@@ -42,7 +42,6 @@ export class AddTaskComponent implements OnInit {
   }
 
   parentSelection(parentID) {
-    console.log(" parentID " + (JSON.stringify(parentID)));
     this.parentTaskList.filter(parent => {
       if (parent.id == this.parentId) {
         this.parentName = parent.task;
