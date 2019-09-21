@@ -26,7 +26,8 @@ pipeline {
 	    	sh "docker login -u fsddocker -p ${DockerPwd}"
 		}
 		
-   		sh 'docker push fsddocker/project-mgr-boot:"$BUILD_NUMBER"'
+   		sh 'docker push fsddocker/task-manager-io:"$BUILD_NUMBER"'
+   		sh 'docker push fsddocker/task-manager-spa:"$BUILD_NUMBER"
    }
    
    stage('Run Docker container') {
